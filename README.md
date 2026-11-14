@@ -71,3 +71,7 @@ Flask starts in debug mode on http://127.0.0.1:5000. Open it, choose Register, a
 - `app.py` sets `SECRET_KEY` to a placeholder string and runs with `debug=True`. Change both before you run this anywhere other people can reach.
 - There is no migration history. `app.py` sets up Flask-Migrate, but the repo has no `migrations/` folder. `db.create_all()` adds missing tables and leaves existing ones alone. After a schema change, delete `instance/site.db`, which removes existing accounts, then run the create step again.
 - `requirements.txt` lists Flask-WTF, Flask-Mail and python-dotenv, but no module imports them yet.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
